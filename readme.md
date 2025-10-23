@@ -116,3 +116,48 @@ mvn spring-boot:run
 
 mvn test
 ```
+
+---
+
+## 💻 API Usage
+
+Once the application is running locally (default port **8080**),  
+you can interact with the API using `curl`, Postman, or directly via browser.
+
+### ➕ Create a Transaction (POST)
+
+Endpoint:
+```bash
+curl -X POST "http://localhost:8080/transactions?description=Laptop&date=2025-10-23&amount=1200.50"
+```
+
+Response:
+```
+{
+  "id": "b6f2e0df-0a9a-4a1b-a7e8-70a6c6fefb0a",
+  "description": "Laptop",
+  "date": "2025-10-23",
+  "amountUSD": 1200.50
+}
+```
+
+### 💱 Retrieve Transactions in Another Currency (GET)
+
+Endpoint:
+```bash
+curl -X GET "http://localhost:8080/transactions/{currency}"
+````
+
+Response:
+```
+[
+  {
+    "id": "b6f2e0df-0a9a-4a1b-a7e8-70a6c6fefb0a",
+    "description": "Laptop",
+    "date": "2025-10-23",
+    "usdAmount": 1200.50,
+    "exchangeRate": 0.92,
+    "convertedAmount": 1104.46
+  }
+]
+```
