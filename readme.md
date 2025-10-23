@@ -2,21 +2,16 @@
 # 💳 WEX - Transaction Currency Converter API
 
   
-
 This is a **Spring Boot application** developed as part of the **WEX Senior Software Engineer Assessment**.
 
 It allows you to **store purchase transactions in USD** and **retrieve them converted** into other currencies using official exchange rates from the **U.S. Treasury Reporting Rates of Exchange API**.
 
-  
 
 ---
-
   
-
 ## 🚀 Features
 
   
-
 - Store a purchase transaction (description, date, and USD amount)
 
 - Retrieve all stored transactions converted to a target currency
@@ -28,14 +23,11 @@ It allows you to **store purchase transactions in USD** and **retrieve them conv
 - Proper validation, error handling, and RESTful responses
 
   
-
 ---
 
-  
 
 ## 🧩 Tech Stack
 
-  
 
 - **Java 21**
 
@@ -53,11 +45,9 @@ It allows you to **store purchase transactions in USD** and **retrieve them conv
 
 ---
 
-  
 
 ## ⚙️ Project Structure
 
-  
 
 ```plaintext
 
@@ -87,26 +77,23 @@ src/
 
 ```
 
-  
 
 ---
 
   
-
 ## 🛠️ Setup & Run
 
-  
 
 ### 1️⃣ Clone the repository
 
 ```bash
 
-git clone https://github.com/<your-username>/transactions-app.git
+git clone https://github.com/artcouto92/transactions-app.git
 
 cd transactions-app
 ```
 
-  
+
 ### 2️⃣ Build the project
   
 ```bash
