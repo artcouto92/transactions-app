@@ -161,3 +161,8 @@ Response:
   }
 ]
 ```
+
+💡 Example currencies supported by the API:  
+> “EURO”, “REAL”, “POUND”, “YEN”, etc.
+
+
